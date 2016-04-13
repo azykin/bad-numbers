@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nvlebedev/bad-numbers#readme",
   "dependencies": {
     "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4"
   }
 }
