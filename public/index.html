@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"/>
+</head>
+<body class="container" ng-app="app">
+    <div class="jumbotron">
+        <h1>Hello world</h1>
+    </div>
+    <div ng-controller="phoneStatController">
+        <input ng-model="phoneSearch" />
+        <div ng-repeat="phone in phones | filter: phoneSearch">
+            <div class="well" ng-bind="phone.number"></div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="./angular/angular.min.js"></script>
+    <script src="js/appication.js"></script>
+    <script src="js/controllers/phoneStatController.js"></script>
+</body>
+</html>
